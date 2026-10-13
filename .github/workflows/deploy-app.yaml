@@ -1,0 +1,15 @@
+# Publica o app no GitHub Pages a cada commit na branch main.
+# Modelo da Posit: github.com/posit-dev/r-shinylive (examples)
+name: Deploy app to gh-pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+
+jobs:
+  shinylive:
+    uses: posit-dev/r-shinylive/.github/workflows/deploy-app.yaml@actions-v1
+    permissions:
+      pages: write
+      id-token: write
