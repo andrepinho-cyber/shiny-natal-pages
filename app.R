@@ -73,7 +73,7 @@ sobre <- card(
 ## ---- app_ui ----
 # Cada módulo entra na ui pela função nomeUI(), com o seu id.
 ui <- page_navbar(
-  title = "Temperaturas e chuva em Natal",
+  title = "Temperaturas e chuva em Natal (GitHub Pages)",
   id = "pagina",
   theme = bs_theme(preset = "cerulean"),
   sidebar = sidebar(width = 300, filtroUI("filtro")),
